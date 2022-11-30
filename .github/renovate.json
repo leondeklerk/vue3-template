@@ -7,21 +7,15 @@
     "configMigration": true,
     "timezone": "Europe/Amsterdam",
     "vulnerabilityAlerts": {
+        "groupName": null,
         "enabled": true,
         "labels": ["security"],
         "schedule": "at any time"
-    },
-    "docker": {
-        "enabled": false
     },
     "digest": {
         "enabled": false
     },
     "packageRules": [
-        {
-            "matchPackageNames": ["vue"],
-            "allowedVersions": "<3"
-        },
         {
             "matchPackagePatterns": ["*"],
             "matchUpdateTypes": ["minor", "patch"],

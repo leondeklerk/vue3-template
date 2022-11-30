@@ -10,3 +10,5 @@ A vue 3 template repository configured with the following dependencies:
 - Bootstrap
 - Fontawesome (free)
 - husky (pre-commit lint/type-check)
+- Renovate
+- Lint/build action

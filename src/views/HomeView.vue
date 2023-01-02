@@ -1,7 +1,7 @@
 <template>
-    <main>
-        <TemplateComponent />
-    </main>
+	<main>
+		<TemplateComponent />
+	</main>
 </template>
 
 <script setup lang="ts">

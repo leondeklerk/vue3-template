@@ -10,7 +10,7 @@
 		"check": "run-s type-check lint",
 		"lint": "eslint --ext .ts,.vue,.js --max-warnings 0 .",
 		"lint:fix": "eslint --ext .ts,.vue,.js --fix .",
-		"prepare": "husky install",
+		"prepare": "husky",
 		"preview": "vite preview",
 		"test:unit": "vitest",
 		"type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false "

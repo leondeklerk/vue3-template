@@ -22,6 +22,9 @@
 		},
 		"preserveValueImports": false,
 		"importsNotUsedAsValues": "remove",
-		"verbatimModuleSyntax": true
+		"verbatimModuleSyntax": true,
+		"outDir": "dist",
+		"declaration": true,
+		"noEmit": false,
 	}
 }

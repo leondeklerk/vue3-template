@@ -24,15 +24,15 @@
 		"vue-router": "4.5.0"
 	},
 	"optionalDependencies": {
-		"@rollup/rollup-linux-x64-gnu": "4.38.0",
-		"@tailwindcss/oxide-linux-x64-gnu": "4.0.17",
+		"@rollup/rollup-linux-x64-gnu": "4.39.0",
+		"@tailwindcss/oxide-linux-x64-gnu": "4.1.1",
 		"lightningcss-linux-x64-gnu": "1.29.3"
 	},
 	"devDependencies": {
-		"@tailwindcss/vite": "4.0.17",
+		"@tailwindcss/vite": "4.1.1",
 		"@tsconfig/node22": "22.0.1",
 		"@types/jsdom": "21.1.7",
-		"@types/node": "22.13.14",
+		"@types/node": "22.14.0",
 		"@vitejs/plugin-vue": "5.2.3",
 		"@vue/eslint-config-prettier": "10.2.0",
 		"@vue/eslint-config-typescript": "14.5.0",
@@ -42,11 +42,11 @@
 		"husky": "9.1.7",
 		"lint-staged": "15.5.0",
 		"prettier": "3.5.3",
-		"tailwindcss": "4.0.17",
+		"tailwindcss": "4.1.1",
 		"typescript": "5.8.2",
-		"vite": "6.2.3",
+		"vite": "6.2.5",
 		"vite-plugin-vue-devtools": "7.7.2",
-		"vitest": "3.0.9",
+		"vitest": "3.1.1",
 		"vue-tsc": "2.2.8"
 	}
 }

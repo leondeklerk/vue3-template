@@ -37,16 +37,16 @@
 		"@vue/eslint-config-prettier": "10.2.0",
 		"@vue/eslint-config-typescript": "14.5.0",
 		"@vue/tsconfig": "0.7.0",
-		"eslint": "9.25.1",
+		"eslint": "9.26.0",
 		"eslint-plugin-vue": "10.1.0",
 		"husky": "9.1.7",
 		"lint-staged": "15.5.1",
 		"prettier": "3.5.3",
 		"tailwindcss": "4.1.5",
 		"typescript": "5.8.3",
-		"vite": "6.3.4",
+		"vite": "6.3.5",
 		"vite-plugin-vue-devtools": "7.7.6",
-		"vitest": "3.1.2",
+		"vitest": "3.1.3",
 		"vue-tsc": "2.2.10"
 	}
 }

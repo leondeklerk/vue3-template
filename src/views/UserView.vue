@@ -1,10 +1,11 @@
 <template>
 	<div>
 		<div v-if="loading">
-			<p>Loading component data...</p>
+			<p>Loading user data...</p>
 		</div>
 		<div v-else>
-			Component Loaded
+			User:
+			{{ route.params.id }}
 			<input
 				type="text"
 				class="border border-gray-300 rounded p-2"
@@ -16,9 +17,12 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
-const loading = ref<boolean>(true);
+import { useRoute } from "vue-router";
 
-defineOptions({ name: "TemplateComponent" });
+const loading = ref<boolean>(true);
+const route = useRoute();
+
+defineOptions({ name: "UserView" });
 
 await new Promise((resolve) => {
 	setTimeout(() => {

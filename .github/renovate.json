@@ -1,34 +1,31 @@
 {
-	"extends": ["config:recommended", ":rebaseStalePrs", ":pinVersions"],
-	"labels": ["renovate"],
-	"rollbackPrs": true,
-	"dependencyDashboard": false,
-	"assignees": ["developer@leondeklerk.com"],
-	"configMigration": true,
-	"timezone": "Europe/Amsterdam",
-	"vulnerabilityAlerts": {
-		"groupName": null,
-		"enabled": true,
-		"labels": ["security"],
-		"schedule": "at any time"
-	},
-	"digest": {
-		"enabled": false
-	},
-	"packageRules": [
-		{
-			"matchUpdateTypes": ["minor", "patch"],
-			"groupName": "minor dependencies",
-			"groupSlug": "dependencies-minor",
-			"addLabels": ["minor"],
-			"matchPackageNames": ["*"]
-		},
-		{
-			"matchUpdateTypes": ["major"],
-			"groupName": "major dependencies",
-			"groupSlug": "dependencies-major",
-			"addLabels": ["major"],
-			"matchPackageNames": ["*"]
-		}
-	]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    "schedule:weekly"
+  ],
+  "timezone": "Europe/Amsterdam",
+  "dependencyDashboard": false,
+  "labels": ["renovate"],
+  "assignees": ["developer@leondeklerk.com"],
+  "packageRules": [
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "platformAutomerge": true
+    },
+    {
+      "description": "Non-major dependencies",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "groupName": "Non-major dependencies",
+      "groupSlug": "non-major"
+    },
+    {
+      "description": "Major dependencies",
+      "matchUpdateTypes": ["major"],
+      "groupName": "Major dependencies",
+      "groupSlug": "major"
+    }
+  ]
 }

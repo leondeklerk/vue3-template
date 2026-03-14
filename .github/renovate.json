@@ -1,31 +1,49 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:best-practices",
-    "schedule:weekly"
-  ],
-  "timezone": "Europe/Amsterdam",
-  "dependencyDashboard": false,
-  "labels": ["renovate"],
-  "assignees": ["developer@leondeklerk.com"],
-  "packageRules": [
-    {
-      "description": "Automerge non-major updates",
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true,
-      "platformAutomerge": true
-    },
-    {
-      "description": "Non-major dependencies",
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "groupName": "Non-major dependencies",
-      "groupSlug": "non-major"
-    },
-    {
-      "description": "Major dependencies",
-      "matchUpdateTypes": ["major"],
-      "groupName": "Major dependencies",
-      "groupSlug": "major"
-    }
-  ]
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:recommended",
+		":configMigration",
+		":pinDevDependencies",
+		"abandonments:recommended",
+		"security:minimumReleaseAgeNpm",
+		":maintainLockFilesWeekly"
+	],
+	"timezone": "Europe/Amsterdam",
+	"dependencyDashboard": false,
+	"labels": ["renovate"],
+	"assignees": ["developer@leondeklerk.com"],
+	"schedule": ["before 5am on Monday"],
+	"packageRules": [
+		{
+			"description": "Non-major dependencies",
+			"matchUpdateTypes": ["minor", "patch", "pin"],
+			"automerge": true,
+			"platformAutomerge": true,
+			"groupName": "Non-major updates",
+			"groupSlug": "non-major-updates",
+			"enabled": true
+		},
+		{
+			"description": "Lock file maintenance",
+			"matchUpdateTypes": ["lockFileMaintenance"],
+			"automerge": true,
+			"platformAutomerge": true,
+			"groupName": "Lock file maintenance",
+			"groupSlug": "lock-file-maintenance",
+			"enabled": true
+		},
+		{
+			"description": "Security patches",
+			"matchUpdateTypes": ["patch", "minor"],
+			"matchVulnerabilitySeverity": ["critical", "high", "moderate"],
+			"automerge": true,
+			"platformAutomerge": true
+		},
+		{
+			"description": "Major dependencies",
+			"matchUpdateTypes": ["major"],
+			"groupName": "Major dependencies",
+			"groupSlug": "major"
+		}
+	]
 }

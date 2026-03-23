@@ -21,17 +21,17 @@
 		"@fortawesome/fontawesome-free": "7.2.0",
 		"pinia": "3.0.4",
 		"vue": "3.5.30",
-		"vue-router": "5.0.3"
+		"vue-router": "5.0.4"
 	},
 	"optionalDependencies": {
 		"@rollup/rollup-linux-x64-gnu": "4.59.0",
-		"@tailwindcss/oxide-linux-x64-gnu": "4.2.1",
+		"@tailwindcss/oxide-linux-x64-gnu": "4.2.2",
 		"lightningcss-linux-x64-gnu": "1.32.0"
 	},
 	"devDependencies": {
-		"@tailwindcss/vite": "4.2.1",
+		"@tailwindcss/vite": "4.2.2",
 		"@tsconfig/node24": "24.0.4",
-		"@types/jsdom": "28.0.0",
+		"@types/jsdom": "28.0.1",
 		"@types/node": "24.12.0",
 		"@vitejs/plugin-vue": "6.0.5",
 		"@vue/eslint-config-prettier": "10.2.0",
@@ -40,13 +40,13 @@
 		"eslint": "10.0.3",
 		"eslint-plugin-vue": "10.8.0",
 		"husky": "9.1.7",
-		"lint-staged": "16.3.3",
+		"lint-staged": "16.4.0",
 		"prettier": "3.8.1",
-		"tailwindcss": "4.2.1",
+		"tailwindcss": "4.2.2",
 		"typescript": "5.9.3",
 		"vite": "7.3.1",
 		"vite-plugin-vue-devtools": "8.1.0",
 		"vitest": "4.1.0",
-		"vue-tsc": "3.2.5"
+		"vue-tsc": "3.2.6"
 	}
 }

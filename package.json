@@ -37,16 +37,19 @@
 		"@vue/eslint-config-prettier": "10.2.0",
 		"@vue/eslint-config-typescript": "14.9.0",
 		"@vue/tsconfig": "0.9.1",
-		"eslint": "10.6.0",
+		"eslint": "^10.7.0",
 		"eslint-plugin-vue": "10.9.2",
 		"husky": "9.1.7",
-		"lint-staged": "16.4.0",
-		"prettier": "3.9.4",
+		"lint-staged": "^17.0.8",
+		"prettier": "^3.9.5",
 		"tailwindcss": "4.3.2",
-		"typescript": "5.9.3",
-		"vite": "7.3.6",
+		"typescript": "^6.0.3",
+		"vite": "^8.1.4",
 		"vite-plugin-vue-devtools": "8.1.5",
-		"vitest": "4.1.9",
-		"vue-tsc": "3.3.6"
+		"vitest": "^4.1.10",
+		"vue-tsc": "^3.3.7"
+	},
+	"allowScripts": {
+		"esbuild@0.28.1": true
 	}
 }

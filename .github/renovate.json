@@ -9,7 +9,9 @@
 		":maintainLockFilesWeekly"
 	],
 	"timezone": "Europe/Amsterdam",
-	"dependencyDashboard": false,
+	"dependencyDashboard": {
+		"enabled": false
+	},
 	"labels": ["renovate"],
 	"assignees": ["developer@leondeklerk.com"],
 	"schedule": ["before 5am on Monday"],
